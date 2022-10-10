@@ -7,7 +7,7 @@
 body{
     width: 100vw;
     overflow-x: hidden;
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
 }
 li{
     list-style: none;
@@ -47,13 +47,13 @@ li{
 .image-slider{
     width: 950px;
     height: 60vh;
-    /* padding: 1.5rem 0; */
-    margin: 1.5rem auto;
+    margin: 3rem auto;
     position: relative;
 }
 .image-slider .img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .caption{
     width: max-content;
@@ -83,15 +83,66 @@ li{
 
 /* featured tours section */
 .featured-tours{
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 3rem;
+    border-top: 1px solid rgb(61, 61, 61);
+    border-bottom: 1px solid rgb(61, 61, 61);
 }
 .featured-tours-inner{
     margin-top: 2rem;
     display: flex;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 .ind-tours-card{
     width: 250px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+.card-img{
+    width: 100%;
 }
 .ind-tours-card img{
-    width: 90%;
+    width: 100%;
+    padding: 5px;
+    transition: .3s;
+}
+.ind-tours-card img:hover{
+    filter: sepia(50%);
+}
+.card-text{
+    padding: 0 9px .75rem;
+}
+.card-text button{
+    padding: .25rem .75rem;
+    margin-top: .5rem;
+}
+
+/* travel gallery section */
+.travel-gallery{
+    padding: 2rem;
+}
+.travel-gallery-inner{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.travel-gallery img{
+    width: 175px;
+    transition: .3s;
+}
+.travel-gallery img:hover{
+    filter: sepia(50%);
+}
+
+/* footer */
+.footer{
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(92, 92, 92);
 }

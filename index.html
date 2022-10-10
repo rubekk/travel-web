@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Envision Travel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,42 +33,135 @@
 	<div class="image-slider">
 		<img class="img" src="" alt="Beautiful images"/>
 		<p class="caption">This is an image caption</p>
-		<button class="prev-btn">Prev</button>
-		<button class="next-btn">Next</button>
+		<button class="prev-btn">
+			<i class="fa-solid fa-chevron-left"></i>
+		</button>
+		<button class="next-btn">
+			<i class="fa-solid fa-chevron-right"></i>
+		</button>
 	</div>
 
 	<!-- featured tours section -->
 	<div class="featured-tours">
-		<h2>Featured Tours</h2>
+		<h2 class="sub-title-lg">Featured Tours</h2>
 		<div class="featured-tours-inner">
 			<div class="ind-tours-card">
-				<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
-				<p>Mustang Tours</p>
-				<p>6N/7D</p>
-				<button>Read more</button>
+				<div class="card-img">
+					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+				</div>
+				<div class="card-text">
+					<p>Mustang Tours</p>
+					<p>6N/7D</p>
+					<button>Read more</button>
+				</div>
 			</div>
 			<div class="ind-tours-card">
-				<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
-				<p></p>
-				<p></p>
-				<button>Read more</button>
+				<div class="card-img">
+					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+				</div>
+				<div class="card-text">
+					<p>ABC</p>
+					<p>11N/12D</p>
+					<button>Read more</button>
+				</div>
+			</div>
+			<div class="ind-tours-card">
+				<div class="card-img">
+					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+				</div>
+				<div class="card-text">
+					<p>Mardi Trek</p>
+					<p>5N/6D</p>
+					<button>Read more</button>
+				</div>
+			</div>
+			<div class="ind-tours-card">
+				<div class="card-img">
+					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+				</div>
+				<div class="card-text">
+					<p>Tilicho Lake</p>
+					<p>6N/7D</p>
+					<button>Read more</button>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- travel gallery section-->
-	<div class="travel-gallery"></div>
+	<div class="travel-gallery">
+		<h2 class="sub-title-lg">Travel Gallery</h2>
+		<div class="travel-gallery-inner">
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+		</div>
+	</div>
 
 	<!-- refer, contact and subscription section -->
-	<div>
+	<div class="footer">
 		<!-- refer section -->
-		<div class=""refer></div>
+		<div class="refer">
+			<h3 class="sub-title-sm">Refer</h3>
+			<div class="refer-inner">
+				<div>
+					<label>Name:</label>
+					<input type="text"/>
+				</div>
+				<div>
+					<label>Address:</label>
+					<input type="text"/>
+				</div>
+				<div>
+					<label>Destination:</label>
+					<select>
+						<option value="mustang">Mustang</option>
+						<option value="abc">ABC</option>
+						<option value="pokhara">Pokhara</option>
+						<option value="gosaikunda">Gosaikunda</option>
+						<option value="lumbini">Lumbini</option>
+					</select>
+				</div>
+				<div>
+					<label>Message:</label>
+					<input type="text"/>
+				</div>
+
+				<button>Submit</button>
+			</div>
+		</div>
 
 		<!-- contact section -->
-		<div class="contact"></div>
+		<div class="contact">
+			<h3 class="sub-title-sm">Contact Us</h3>
+			<div class="contact-inner">
+				<p>Organization name</p>
+				<p>Address</p>
+				<p>Phone no.</p>
+				<p>Email</p>
+			</div>
+		</div>
 
 		<!-- subscription section -->
-		<div class="subscription"></div>
+		<div class="subscription">
+			<h3 class="sub-title-sm">Subscription form</h3>
+			<div class="subscription-inner">
+				<div>
+					<label>Name:</label>
+					<input type="text"/>
+				</div>
+				<div>
+					<label>Email:</label>
+					<input type="text"/>
+				</div>
+			</div>
+
+			<button>Subscribe</button>
+		</div>
 	</div>
 
 	<script src="script.js"></script>
