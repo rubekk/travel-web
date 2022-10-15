@@ -36,10 +36,10 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.ham-burger{
-    font-size: 1.25rem;
-    display: none;
-    cursor: pointer;
+.ham-burger {
+  font-size: 1.25rem;
+  display: none;
+  cursor: pointer;
 }
 
 /* nav bar section */
@@ -65,35 +65,35 @@ button {
 .nav-bar li:last-child {
   border-right: none;
 }
-.mobile-nav-bar{
-    width: 300px;
-    position: absolute;
-    right: 0%;
-    top: 11.75%;
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--secondaryColor);
-    z-index: 5;
+.mobile-nav-bar {
+  width: 300px;
+  position: absolute;
+  right: 0%;
+  top: 11.75%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  z-index: 5;
 }
-.mobile-nav-bar li{
-    padding: .5rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid #fff;
-    cursor: pointer;
-    transition: .5s;
+.mobile-nav-bar li {
+  padding: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.mobile-nav-bar li:last-child{
-    border-bottom: 0;
+.mobile-nav-bar li:last-child {
+  border-bottom: 0;
 }
-.mobile-nav-bar li:hover{
-    transition: .5s ease-out;
-    background-color: #000;
-    color: var(--secondaryColor);
+.mobile-nav-bar li:hover {
+  transition: 0.5s ease-out;
+  background-color: #000;
+  color: var(--secondaryColor);
 }
 
 /* image slider section */
@@ -193,7 +193,7 @@ button {
   background-color: var(--secondaryColor);
   border-bottom: 2px solid var(--borderColor);
 }
-.travel-gallery-outer{
+.travel-gallery-outer {
   width: 90vw;
   overflow-x: hidden;
   margin: 2rem auto 0;
@@ -203,7 +203,7 @@ button {
   margin-left: -5.5%;
   display: flex;
   justify-content: flex-start;
-  transition: .5s;
+  transition: 0.5s;
 }
 .travel-gallery img {
   width: 225px;
@@ -214,7 +214,7 @@ button {
 }
 
 /* individual gallery image section */
-.ind-gallery-sec{
+.ind-gallery-sec {
   width: 100vw;
   height: 100vh;
   display: none;
@@ -225,7 +225,7 @@ button {
   left: 0;
   background-color: #000;
 }
-.cross-btn{
+.cross-btn {
   position: absolute;
   top: 1rem;
   right: 3rem;
@@ -283,142 +283,4 @@ textarea {
 .vertical-line {
   border-right: 1px solid #b3b3b3;
   height: 375px;
-}
-
-/* media queries*/
-@media (max-width: 1150px) {
-  .footer {
-    display: grid;
-    grid-template: repeat(3, max-content) / repeat(1, 1fr);
-    place-items: center;
-  }
-  .vertical-line {
-    border-top: 1px solid #797979;
-    border-right: none;
-    height: 0;
-    width: 60%;
-    margin: 2rem 0;
-  }
-  iframe {
-    width: 450px;
-    height: 350px;
-  }
-}
-@media (max-width: 1075px) {
-  .image-slider{
-    width: 900px;
-  }
-  .featured-tours-inner {
-    grid-template: repeat(2, max-content) / repeat(3, 250px);
-  }
-}
-@media(max-width: 975px){
-  .image-slider{
-    width: 800px;
-  }
-}
-@media (max-width: 850px){
-  .image-slider{
-    width: 700px;
-    height: 65vh;
-  }
-    .header{
-        border-bottom: 2px solid #fff;
-    }
-    .ham-burger{
-        display: block;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .active{
-        display: flex;
-    }
-    .image-slider{
-      margin-top: 2rem;
-    }
-}
-@media (max-width: 800px) {
-  .featured-tours-inner {
-    grid-template: repeat(2, max-content) / repeat(2, 300px);
-  }
-  .vertical-line {
-    width: 80%;
-  }
-}
-@media(max-width: 730px){
-  .image-slider{
-    width: 600px;
-    height: 55vh;
-  }
-}
-@media(max-width: 730px){
-  .image-slider{
-    width: 500px;
-    height: 45vh;
-  }
-}
-@media (max-width: 690px) {
-  .featured-tours-inner {
-    grid-template: repeat(2, max-content) / repeat(2, 250px);
-  }
-  iframe {
-    width: 300px;
-    height: 200px;
-  }
-}
-@media (max-width: 555px) {
-  .image-slider{
-    width: 90vw;
-    height: 35vh;
-  }
-  .featured-tours-inner {
-    grid-template: repeat(4, max-content) / repeat(1, 300px);
-  }
-  .vertical-line {
-    width: 90%;
-  }
-}
-@media (max-width: 450px){
-  .row{
-    display: block;
-  }
-}
-@media (max-width: 400px){
-  .footer{
-    padding: 2rem 1rem;
-  }
-}
-@media (max-width: 370px){
-  .footer{
-    padding: 2rem 0;
-  }
-  .contact .sub-title-sm{
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 340px) {
-  .image-slider{
-    height: 25vh;
-  }
-  .featured-tours-inner {
-    grid-template: repeat(4, max-content) / repeat(1, 1fr);
-  }
-  iframe{
-    width: 200px;
-    height: 150px;
-  }
-}
-@media (max-width: 300px){
-  .mobile-nav-bar{
-    width: 100vw;
-  }
-}
-@media (min-width: 851px){
-    .ham-burger{
-        display: none;
-    }
-    .mobile-nav-bar{
-        display: none;
-    }
 }
