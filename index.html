@@ -9,15 +9,33 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="mediaqueries.css">
+
 </head>
 <body>
 	<!-- header section-->
 	<div class="header">
 		<h1>Envision Travel</h1>
+		<div class="ham-burger">
+			<i id="ham" class="fa-solid fa-bars"></i>
+		</div>
 	</div>
 
 	<!-- navigation section-->
 	<div class="nav-bar">
+		<li>Home</li>
+		<li>About</li>
+		<li>Hotel</li>
+		<li>Tour Package</li>
+		<li>Subscription</li>
+		<li>Contact</li>
+		<li>
+			<button>Refer</button>
+		</li>
+	</div>
+
+	<!-- mobile navigation -->
+	<div class="mobile-nav-bar">
 		<li>Home</li>
 		<li>About</li>
 		<li>Hotel</li>
@@ -44,45 +62,47 @@
 	<!-- featured tours section -->
 	<div class="featured-tours">
 		<h2 class="sub-title-lg">Featured Tours</h2>
-		<div class="featured-tours-inner">
-			<div class="ind-tours-card">
-				<div class="card-img">
-					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+		<div class="center-cards">
+			<div class="featured-tours-inner">
+				<div class="ind-tours-card">
+					<div class="card-img">
+						<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+					</div>
+					<div class="card-text">
+						<p class="card-name">Mustang Tours</p>
+						<p class="card-details">6N/7D</p>
+						<button>Read more</button>
+					</div>
 				</div>
-				<div class="card-text">
-					<p>Mustang Tours</p>
-					<p>6N/7D</p>
-					<button>Read more</button>
+				<div class="ind-tours-card">
+					<div class="card-img">
+						<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+					</div>
+					<div class="card-text">
+						<p class="card-name">ABC</p>
+						<p class="card-details">11N/12D</p>
+						<button>Read more</button>
+					</div>
 				</div>
-			</div>
-			<div class="ind-tours-card">
-				<div class="card-img">
-					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+				<div class="ind-tours-card">
+					<div class="card-img">
+						<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+					</div>
+					<div class="card-text">
+						<p class="card-name">Mardi Trek</p>
+						<p class="card-details">5N/6D</p>
+						<button>Read more</button>
+					</div>
 				</div>
-				<div class="card-text">
-					<p>ABC</p>
-					<p>11N/12D</p>
-					<button>Read more</button>
-				</div>
-			</div>
-			<div class="ind-tours-card">
-				<div class="card-img">
-					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
-				</div>
-				<div class="card-text">
-					<p>Mardi Trek</p>
-					<p>5N/6D</p>
-					<button>Read more</button>
-				</div>
-			</div>
-			<div class="ind-tours-card">
-				<div class="card-img">
-					<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
-				</div>
-				<div class="card-text">
-					<p>Tilicho Lake</p>
-					<p>6N/7D</p>
-					<button>Read more</button>
+				<div class="ind-tours-card">
+					<div class="card-img">
+						<img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5a193d2d43b3703410525ad95ef9cd065c9d92c6/big-22755a386af7fb4c78c668c102c0397d.jpg" alt="Tour Picture"/>
+					</div>
+					<div class="card-text">
+						<p class="card-name">Tilicho Lake</p>
+						<p class="card-details">6N/7D</p>
+						<button>Read more</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -91,15 +111,25 @@
 	<!-- travel gallery section-->
 	<div class="travel-gallery">
 		<h2 class="sub-title-lg">Travel Gallery</h2>
-		<div class="travel-gallery-inner">
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
-			<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+		<div class="travel-gallery-outer">
+			<div class="travel-gallery-inner">
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+				<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt=""/>
+			</div>
 		</div>
+	</div>
+
+	<!-- individual gallery image section -->
+	<div class="ind-gallery-sec">
+		<div class="cross-btn">
+			<i class="fa-solid fa-times"></i>
+		</div>
+		<img class="ind-img" src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt="" />
 	</div>
 
 	<!-- refer, contact and subscription section -->
@@ -108,16 +138,22 @@
 		<div class="refer">
 			<h3 class="sub-title-sm">Refer</h3>
 			<div class="refer-inner">
-				<div>
-					<label>Name:</label>
+				<div class="row">
+					<div class="label">
+						<label>Name:</label>
+					</div>
 					<input type="text"/>
 				</div>
-				<div>
-					<label>Address:</label>
+				<div class="row">
+					<div class="label">
+						<label>Address:</label>
+					</div>
 					<input type="text"/>
 				</div>
-				<div>
-					<label>Destination:</label>
+				<div class="row">
+					<div class="label">
+						<label>Destination:</label>
+					</div>
 					<select>
 						<option value="mustang">Mustang</option>
 						<option value="abc">ABC</option>
@@ -126,41 +162,51 @@
 						<option value="lumbini">Lumbini</option>
 					</select>
 				</div>
-				<div>
-					<label>Message:</label>
-					<input type="text"/>
+				<div class="row">
+					<div class="label">
+						<label>Message:</label>
+					</div>
+					<textarea></textarea>
 				</div>
 
 				<button>Submit</button>
 			</div>
 		</div>
 
+		<div class="vertical-line"></div>
+
 		<!-- contact section -->
 		<div class="contact">
 			<h3 class="sub-title-sm">Contact Us</h3>
 			<div class="contact-inner">
-				<p>Organization name</p>
-				<p>Address</p>
-				<p>Phone no.</p>
-				<p>Email</p>
+				<p>Envision Travel</p>
+				<p>Address: </p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.92457744574!2d85.33106357613899!3d27.694703324255254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a06c2eaf9%3A0xc5670a9173e161de!2sNew%20Baneshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1665829317891!5m2!1sen!2snp" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<p>Phone: 01-5555228, 9812345678</p>
+				<p>Email: info@envision.com.np</p>
 			</div>
 		</div>
+
+		<div class="vertical-line"></div>
 
 		<!-- subscription section -->
 		<div class="subscription">
 			<h3 class="sub-title-sm">Subscription form</h3>
 			<div class="subscription-inner">
-				<div>
-					<label>Name:</label>
+				<div class="row">
+					<div class="label">
+						<label>Name:</label>
+					</div>
 					<input type="text"/>
 				</div>
-				<div>
-					<label>Email:</label>
+				<div class="row">
+					<div class="label">
+						<label>Email:</label>
+					</div>
 					<input type="text"/>
 				</div>
+				<button>Subscribe</button>
 			</div>
-
-			<button>Subscribe</button>
 		</div>
 	</div>
 

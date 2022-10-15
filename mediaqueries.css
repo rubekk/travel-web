@@ -1,0 +1,158 @@
+/* media queries*/
+@media (max-width: 1150px) {
+    .footer {
+      display: grid;
+      grid-template: repeat(3, max-content) / repeat(1, 1fr);
+      place-items: center;
+    }
+    .vertical-line {
+      border-top: 1px solid #797979;
+      border-right: none;
+      height: 0;
+      width: 60%;
+      margin: 2rem 0;
+    }
+    iframe {
+      width: 450px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 1075px) {
+    .image-slider{
+      width: 900px;
+    }
+    .featured-tours-inner {
+      grid-template: repeat(2, max-content) / repeat(3, 250px);
+    }
+  }
+  @media(max-width: 975px){
+    .image-slider{
+      width: 800px;
+    }
+  }
+  @media (max-width: 850px){
+    .image-slider{
+      width: 700px;
+      height: 65vh;
+    }
+      .header{
+          border-bottom: 2px solid #fff;
+      }
+      .ham-burger{
+          display: block;
+      }
+      .nav-bar{
+          display: none;
+      }
+      .active{
+          display: flex;
+      }
+      .image-slider{
+        margin-top: 2rem;
+      }
+  }
+  @media (max-width: 800px) {
+    .featured-tours-inner {
+      grid-template: repeat(2, max-content) / repeat(2, 300px);
+    }
+    .vertical-line {
+      width: 80%;
+    }
+  }
+  @media(max-width: 730px){
+    .image-slider{
+      width: 600px;
+      height: 55vh;
+    }
+  }
+  @media(max-width: 730px){
+    .image-slider{
+      width: 500px;
+      height: 45vh;
+    }
+  }
+  @media (max-width: 690px) {
+    .featured-tours-inner {
+      grid-template: repeat(2, max-content) / repeat(2, 250px);
+    }
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  @media (max-width: 555px) {
+    .image-slider{
+      width: 90vw;
+      height: 35vh;
+    }
+    .featured-tours-inner {
+      grid-template: repeat(4, max-content) / repeat(1, 300px);
+    }
+    .vertical-line {
+      width: 90%;
+    }
+  }
+  @media (max-width: 450px){
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .row{
+      display: block;
+    }
+  }
+  @media (max-width: 400px){
+    .footer{
+      padding: 2rem 1rem;
+    }
+  }
+  @media (max-width: 370px){
+    .footer{
+      padding: 2rem 0;
+    }
+    .contact .sub-title-sm{
+      margin-left: 1rem;
+    }
+  }
+  @media (max-width: 340px) {
+    .header{
+       padding: 1rem; 
+    }
+    .image-slider{
+      height: 25vh;
+    }
+    .sub-title-lg{
+        margin-left: 0;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .featured-tours-inner {
+      grid-template: repeat(4, max-content) / repeat(1, 1fr);
+    }
+    iframe{
+      width: 200px;
+      height: 150px;
+    }
+    .sub-title-sm{
+        margin-left: 0;
+        text-align: center;
+    }
+  }
+  @media (max-width: 300px){
+    .header{
+        padding: 1rem .5rem;
+    }
+    .header h1, #ham{
+        font-size: 1.1rem;
+    }
+    .mobile-nav-bar{
+      width: 100vw;
+    }
+  }
+  @media (min-width: 851px){
+      .ham-burger{
+          display: none;
+      }
+      .mobile-nav-bar{
+          display: none;
+      }
+  }
